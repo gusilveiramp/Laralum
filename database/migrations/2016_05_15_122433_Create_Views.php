@@ -18,7 +18,7 @@ class CreateViews extends Migration
              $table->string('ip');
              $table->string('url');
              $table->string('ref');
-             $table->string('country_code');
+             $table->string('country_code')->nullable();
              $table->timestamps();
          });
      }
